@@ -11,10 +11,11 @@
 
     <style>
       body{
-        background: url('Resources/png/flowers_640.png') repeat;
+        background: url('Resources/fff.jpg') repeat;
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        
       }
       .origato{
         margin: 20px;
@@ -24,14 +25,28 @@
         font-size: 25px;
         text-decoration: none;
         transition: transform 0.8ms ease-in;
+        border-radius: .9em;
       }
       .origato:hover{
         color: rgb(20, 78, 155);
         text-decoration: underline;
+        
       }
     .menu{
   background-color: rgba(54, 6, 6, 0.575);
+  border-radius: .9em;
     }
+    .plan {
+      font-size: 25px;
+      background: linear-gradient(135deg, #4eb9d6, #dd0b0b);
+      color: #000000;
+      padding: 8px 15px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-right: 18px;
+      border-radius: .9em;
+      cursor: pointer;
+      transition: 0.2s;
+  }
     </style>
    </head>
 <body>
@@ -41,7 +56,7 @@
 
       <div class="col-md-4">
       <div class="logo">
-        <a href="#" onclick="confirm('Welcome to My Midterm_Project');">Online Library</a>
+        <a href="#" class="logostyle"  onclick="confirm('Welcome to Library');">Online Library</a>
       </div>
     </div>
 
@@ -71,12 +86,18 @@
     <div class="title">Create Amazing WebProject</div>
     <div class="sub_title">Get Full Point</div>
     <div class="btns">
-      <button>Learn More</button>
-      <button>Subscribe</button>
+     <button id="feed">Subscribe</button> 
+     <a href="plan.html"><button >Make Plan</button></a>
+     <script src="feedback.js"></script>
       <br>
+      <br>
+      <div >
       <a href="login.html" class="origato">Authorization</a>
+      </div>
+      <p id="msg" style="font-weight:bold; color:green; font-size:larger"></p>
     </div>
   </div>
 </body>
+
 
 </html>

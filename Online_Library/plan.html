@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Make Plane</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" 
+    rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="planc.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="menu" style="border-radius: .9em;    background: url('Resources/fons1.jpg') repeat; ">
+        <header class="header row gy-3">
+
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="#"  class="logostyle"  onclick="confirm('Welcome to Library');">Online Library</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+                <div class="block">
+                    <nav class="nav">
+
+                        <a class="nav_link col-md-2" href="index.html" onclick="confirm('Are you sure?');">Home</a>
+                        <a class="nav_link col-md-2" href="services.html" onclick="confirm('Are you sure?');">Library</a>
+                        <a class="nav_link col-md-2" href="contact.html" onclick="confirm('Are you sure?');">Contact</a>
+                        <a class="nav_link col-md-2" href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+    </div>
+    <div class="container">
+
+        <div id="newtask">
+            <input type="text" placeholder="Enter your plans here ..">
+            
+            <button id="push">Add books</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+   
+    <script src="planj.js"></script>
+</body>
+</html>

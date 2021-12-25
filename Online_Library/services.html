@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project_WebSite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <style>
+        body{
+ background: url('Resources/library-3.jpg')repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+        margin: 0 auto;
+  
+        }   
+        .pictures{
+  width: 1400;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;;
+     
+}
+.pictures div{
+  width: 200px;
+  height: 250px;
+  background-color:black;
+  font-family: 'Times New Roman',Times,serif;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius:10%;
+  margin-right: 50px;
+  margin: 30px;
+  padding: 10px;
+  
+  
+  
+  text-align: center;
+}
+button{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+.books{
+  width: 150px;
+  height: 180px;
+  margin-top: -18px;
+}
+.books:hover{
+  width: 200px;
+  height:250px;
+  border-radius:15%;
+  margin-top: -100px;
+  margin-left: -12px;
+  
+}
+.books:focus{
+  width: 200px;
+  height:250px;
+  border-radius:15%;
+  margin-top: -100px;
+  margin-left: -12px;
+  
+}
+.gstyle{
+        margin: 0px;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        transition: transform 0.8ms ease-in;
+        border-radius:15%;
+        width: 100%;
+        background-color: coral;
+      }
+      .gstyle:hover{
+        color: green;
+        background-color: black;
+        text-decoration: underline;
+        padding: 1%;
+        border: 2px solid gold;
+        
+      }
+      .dstyle{
+        margin: 0px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        transition: transform 0.8ms ease-in;
+        border-radius:15%;
+        width: 80%;
+        background-color: black;
+      }
+      .dstyle:hover{
+        color: gold;
+        background-color: black ;
+        text-decoration: underline;
+        width: 100%;
+        padding: 1.5%;
+        border: 3px solid gold;
+        
+      }
+     </style>
+
+   
+   </head>
+<body>
+
+
+  <div class="menu" style="border-radius: .9em; background-color: black;">
+    <header class="header row gy-3">
+
+    <div class="col-md-4">
+    <div class="logo">
+      <a href="#" class="logostyle" onclick="confirm('Welcome to Library');  ">Online Library</a>
+    </div>
+  </div>
+
+
+    <div class="col-md-8">
+      <div class="block">
+    <nav class="nav">
+    
+      <a class="nav_link col-md-2" href="index.html" onclick="confirm('Are you sure?');">Home</a>
+      <a class="nav_link col-md-2"  href="services.html" onclick="confirm('Are you sure?');">Library</a>
+      <a  class="nav_link col-md-2" href="contact.html" onclick="confirm('Are you sure?');">Contact</a>
+      <a class="nav_link col-md-2" href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a>
+   
+    </nav>
+</div>
+</div>
+</header>
+ 
+
+  </div>
+
+
+  
+
+  <div class ="pictures">
+      
+    <div><a href="Resources/book-1.pdf" download><p><button class="dstyle">Download</button></p></a>
+      <img src="Resources/book-photo1.jpg"  class="books" alt="Bb" title="Bb" id="pic"/>
+         <a href="https://www.pdfbooksworld.com/bibi/pre.html?book=75.epub" >
+          <p><button class="gstyle">Read Online</button></p></a>
+        </div>
+    
+          <div><a href="Resources/book-2.pdf" download><p><button class="dstyle">Download</button></p></a>
+            <img src="Resources/book-photo2.jpg" class="books" alt="Bb" title="Bb" id="pic2" >
+            <a href="https://liteka.ru/english/library/327-the-lost-world" >
+             <p><button class="gstyle">Read Online</button></p></a></div>
+   
+          <div><a href="Resources/book-3.pdf" download><p><button class="dstyle">Download</button></p></a>
+            <img src="Resources/book-photo3.jpg" class="books" alt="Bb" title="Bb" id="pic3" >
+            <a href="https://liteka.ru/english/library/2536-harry-potter-and-the-chamber-of-secrets" >
+             <p><button class="gstyle">Read Online</button></p></a></div>
+
+    <div><a href="https://www.pdfquran.com/en/" download><p><button class="dstyle">Download</button></p></a>
+      <img src="Resources/book-photo4.jpg" class="books" alt="Bb" title="Bb" id="pic4">
+      <a href="https://www.dawateislami.net/quran/" >
+       <p><button class="gstyle">Read Online</button></p></a></div>
+
+    <div><a href="https://c.wallhere.com/photos/5b/07/space_nebula-79820.jpg!d" download>
+           <img src="https://c.wallhere.com/photos/5b/07/space_nebula-79820.jpg!d" style="width:100%">
+           <p><button class="gstyle">Add to favourite</button></p></a></div>
+
+    <div><a href="https://www.pixel-creation.com/wp-content/uploads/sunset-hd-wallpaper-download-hd-wallpapers-for-desktop.jpg" download>
+           <img src="https://www.pixel-creation.com/wp-content/uploads/sunset-hd-wallpaper-download-hd-wallpapers-for-desktop.jpg" style="width:100%">
+              <p><button class="dstyle">Add to favourite</button></p></a></div>
+
+              <div><a href="https://c.wallhere.com/photos/5b/07/space_nebula-79820.jpg!d" download>
+                <img src="https://c.wallhere.com/photos/5b/07/space_nebula-79820.jpg!d" style="width:100%">
+                <p><button class="dstyle">Add to favourite</button></p></a></div>
+     
+         <div><a href="https://www.pixel-creation.com/wp-content/uploads/sunset-hd-wallpaper-download-hd-wallpapers-for-desktop.jpg" download>
+                <img src="https://www.pixel-creation.com/wp-content/uploads/sunset-hd-wallpaper-download-hd-wallpapers-for-desktop.jpg" style="width:100%">
+                   <p><button class="gstyle">Add to favourite</button></p></a></div>
+
+  
+  
+      </div>>
+      <script>
+        
+        pic.onmouseover=function(){
+          this.src='Resources/book1A.png';
+          this.alt = this.title = 'Zz';   
+        }
+        pic.onmouseout =function(){
+          this.src='Resources/book-photo1.jpg';
+          this.alt = this.title = 'Bb';
+        }
+     
+        pic2.onmouseover=function(){
+          this.src='Resources/book2A.png';
+          this.alt = this.title = 'Zz';   
+        }
+        pic2.onmouseout =function(){
+          this.src='Resources/book-photo2.jpg';
+          this.alt = this.title = 'Bb';
+        }
+
+        pic3.onmouseover=function(){
+          this.src='Resources/book3A.png';
+          this.alt = this.title = 'Zz';   
+        }
+        pic3.onmouseout =function(){
+          this.src='Resources/book-photo3.jpg';
+          this.alt = this.title = 'Bb';
+        }
+
+        pic4.onmouseover=function(){
+          this.src='Resources/book4A.png';
+          this.alt = this.title = 'Zz';   
+        }
+        pic4.onmouseout =function(){
+          this.src='Resources/book-photo4.jpg';
+          this.alt = this.title = 'Bb';
+        }
+    
+    
+      </script>   
+   
+</body>
+
+</html>

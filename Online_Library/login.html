@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css " >
+    
+    <script src="https://kit.fontawesome.com/931d0858ea.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="menu" style="border-radius: .9em;  background-color: linear-gradient(135deg, #3e41e4, #054f7a)
+    ;
+    margin-top:5%;">
+        <header class="header row gy-3">
+
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="#"  class="logostyle"  onclick="confirm('Welcome to Library');">Online Library</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+                <div class="block">
+                    <nav class="nav">
+
+                        <a class="nav_link col-md-2" href="index.html" onclick="confirm('Are you sure?');">Home</a>
+                        <a class="nav_link col-md-2" href="services.html" onclick="confirm('Are you sure?');">Library</a>
+                        <a class="nav_link col-md-2" href="contact.html" onclick="confirm('Are you sure?');">Contact</a>
+                        <a class="nav_link col-md-2" href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+    </div>
+    
+
+
+    <div class="logo">
+        <h2>Sign in/up Form</h2>
+    </div>
+    <div class="container" id="container">
+
+
+
+
+
+
+
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/sdukz" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdu_library/" class="social"><i class="fab fa-instagram-i"></i></a>
+                    <a href="https://www.linkedin.com/school/sdu-kz/" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+
+
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/sdukz" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://sdu.edu.kz/ru/suleyman-demirel-university-ru/" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://www.linkedin.com/school/sdu-kz/" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

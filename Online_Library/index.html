@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> fINAL Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <style>
+      body{
+        background: url('Resources/fff.jpg') repeat;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        
+      }
+      .origato{
+        margin: 20px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 25px;
+        text-decoration: none;
+        transition: transform 0.8ms ease-in;
+        border-radius: .9em;
+      }
+      .origato:hover{
+        color: rgb(20, 78, 155);
+        text-decoration: underline;
+        
+      }
+    .menu{
+  background-color: rgba(54, 6, 6, 0.575);
+  border-radius: .9em;
+    }
+    .plan {
+      font-size: 25px;
+      background: linear-gradient(135deg, #4eb9d6, #dd0b0b);
+      color: #000000;
+      padding: 8px 15px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-right: 18px;
+      border-radius: .9em;
+      cursor: pointer;
+      transition: 0.2s;
+  }
+    </style>
+   </head>
+<body>
+  
+    <div class="menu">
+      <header class="header row gy-3">
+
+      <div class="col-md-4">
+      <div class="logo">
+        <a href="#" class="logostyle"  onclick="confirm('Welcome to Library');">Online Library</a>
+      </div>
+    </div>
+
+
+      <div class="col-md-8">
+        <div class="block">
+      <nav class="nav">
+      
+        <a class="nav_link col-md-2" href="index.html" onclick="confirm('Are you sure?');">Home</a>
+        <a class="nav_link col-md-2"  href="services.html" onclick="confirm('Are you sure?');">Library</a>
+        <a  class="nav_link col-md-2" href="contact.html" onclick="confirm('Are you sure?');">Contact</a>
+        <a class="nav_link col-md-2" href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a>
+     
+      </nav>
+  </div>
+</div>
+</header>
+   
+
+    </div>
+  
+
+  <div class="img">
+  </div>
+  
+  <div class="center">
+    <div class="title">Create Amazing WebProject</div>
+    <div class="sub_title">Get Full Point</div>
+    <div class="btns">
+     <button id="feed">Subscribe</button> 
+     <a href="plan.html"><button >Make Plan</button></a>
+     <script src="feedback.js"></script>
+      <br>
+      <br>
+      <div >
+      <a href="login.html" class="origato">Authorization</a>
+      </div>
+      <p id="msg" style="font-weight:bold; color:green; font-size:larger"></p>
+    </div>
+  </div>
+</body>
+
+
+</html>

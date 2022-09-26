@@ -1,4 +1,4 @@
-# Final_Project | Fromt end | html+ css+ javascript
+# Final_Project | Front end | html+ css+ javascript
  link for hostingp PROJECT:
 https://reverent-carson-a8b43d.netlify.app/
 
